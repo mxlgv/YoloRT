@@ -73,7 +73,7 @@
          }
 +
 +        template <typename R>
-+        operator R () const noexcept
++        operator R () noexcept
 +        {
 +            return static_cast<R const&>(*this);
 +        }
